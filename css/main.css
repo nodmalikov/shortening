@@ -206,7 +206,7 @@ img {
 .mobile-menu__active {
     transform: translateX(0%);
     top: 96px;
-    right: 24px;
+    right: 10%;
 }
 
 /* SITENAV-M */
