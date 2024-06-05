@@ -360,10 +360,7 @@ img {
 /* 800PX */
 @media only screen and (max-width: 800px) {
     /* HEADER */
-    .sitenav {
-        display: none;
-    }
-
+    .sitenav,
     .signup {
         display: none;
     }
