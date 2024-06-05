@@ -333,6 +333,8 @@ img {
     background-image: url("../img/input-bg.svg");
     border-radius: 10px;
     padding: 52px 64px;
+    position: relative;
+    z-index: 888;
 }
 
 .form__input {
