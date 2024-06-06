@@ -467,6 +467,43 @@ img {
     margin: 0;
 }
 
+
+/* STARTED */
+.started {
+    background-image: url("../img/started-bg.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.started__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+
+.started__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.started__button {
+    border-radius: 28px;
+    padding: 13px 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
 /* MEDIA-QUERIES */
 /* 1150PX */
 @media only screen and (max-width: 1150px) {
@@ -563,7 +600,8 @@ img {
     }
     
     /* STATISTICS */
-    .statistics__title {
+    .statistics__title,
+    .started__title {
         font-size: 38px;
     }  
 }
@@ -597,7 +635,8 @@ img {
         padding-top: 160px;
     }
     
-    .statistics__title {
+    .statistics__title,
+    .started__title {
         font-size: 36px;
     }  
     
@@ -638,13 +677,19 @@ img {
     }
     
     /* STATISTICS */
-    .statistics__title {
+    .statistics__title,
+    .started__title {
         font-size: 28px;
     }   
     
     .statistics__subtitle {
         width: 350px;
     }
+
+    /* STARTED */
+    .started__title {
+        margin-bottom: 16px;
+    }  
 }
 
 /* MEDIA-QUERIES */
@@ -688,7 +733,7 @@ img {
         font-size: 42px;
         line-height: 48px;
     }
-    
+
     .hero__subtitle {
         font-size: 18px;
         line-height: 30px;
@@ -732,7 +777,8 @@ img {
         font-size: 20px;
     }
     
-    .statistics__title {
+    .statistics__title,
+    .started__title {
         font-size: 26px;
     }
     
@@ -761,13 +807,15 @@ img {
         line-height: 24px;
     }
     
-    .hero__button {
+    .hero__button,
+    .started__button {
         font-size: 17px;
         padding: 10px 30px;
     }
     
     /* STATISTICS */
-    .statistics__title {
+    .statistics__title,
+    .started__title {
         font-size: 24px;
     }
     
@@ -802,4 +850,9 @@ img {
     .statistics__subtitle {
         width: 225px;
     }
+
+    /* STARTED */
+    .started__title {
+        font-size: 20px;
+    }  
 }
