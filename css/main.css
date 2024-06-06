@@ -473,6 +473,7 @@ img {
     background-image: url("../img/started-bg.svg");
     background-position: center center;
     background-repeat: no-repeat;
+    background-color: var(--menu-color);
 }
 
 .started__container {
@@ -538,7 +539,7 @@ img {
         transform: translateX(-50%);
     }
     
-    .statistics__card:nth-child(2),
+    .statistics__canksrd:nth-child(2),
     .statistics__card:nth-child(3) {
         margin-top: 0px;
     }
