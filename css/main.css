@@ -305,7 +305,6 @@ img {
     font-weight: 500;
     font-size: 22px;
     line-height: 36px;
-    letter-spacing: 0.15px;
     color: var(--paragraph-color);
     margin-top: 0;
     margin-bottom: 38px;
@@ -326,7 +325,7 @@ img {
 
 .form__group {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 24px;
     height: 168px;
     width: 100%;
@@ -339,7 +338,7 @@ img {
 
 .form__input {
     width: 780px;
-    padding: 17px 32px;
+    padding: 14px 32px;
     border-radius: 10px;
     border: 0px;
     font-size: 20px;
@@ -350,13 +349,15 @@ img {
     font-weight: 500;
     font-size: 20px;
     line-height: 36px;
-    letter-spacing: 0.15px;
 }
 
 .form__button {
     padding: 17px 40px;
     border: 0;
     border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: normal;
 }
 
 
@@ -383,7 +384,6 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
-    letter-spacing: 0.12px;
     color: var(--paragraph-color);
     margin-left: auto;
     margin-right: auto;
@@ -549,16 +549,17 @@ img {
     
     .form__group {
         flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        height: 160px;
         padding: 24px;
     }
     
-    .form__button,
-    .form__input {
+    .form__input,
+    .form__button {
         width: 100%;
-    }
-    
-    .form__input {
-        padding: 17px 40px;
+        padding: 10px;
+        line-height: normal;
     }
     
     /* STATISTICS */
@@ -691,22 +692,6 @@ img {
     .hero__subtitle {
         font-size: 18px;
         line-height: 30px;
-        letter-spacing: 0.12px;
-    }
-    
-    .form__group {
-        gap: 16px;
-        height: 160px;
-    }
-    
-    .form__input,
-    .form__button {
-        padding: 15px 38px;
-    }
-    
-    .form__input::placeholder {
-        font-size: 16px;
-        letter-spacing: 0.12px;
     }
     
     /* STATISTICS */
@@ -774,22 +759,6 @@ img {
     .hero__subtitle {
         font-size: 15px;
         line-height: 24px;
-        letter-spacing: 0.8px;
-    }
-    
-    .form__group {
-        gap: 14px;
-        height: 150px;
-    }
-    
-    .form__input,
-    .form__button {
-        padding: 12px 30px;
-    }
-    
-    .form__input::placeholder {
-        font-size: 12px;
-        letter-spacing: 0.12px;
     }
     
     .hero__button {
@@ -827,7 +796,6 @@ img {
     .hero__subtitle {
         font-size: 14px;
         line-height: 18px;
-        letter-spacing: 0.6px;
     }
     
     /* STATISTICS */
