@@ -69,6 +69,7 @@ img {
     cursor: pointer;
     white-space: nowrap;
     transition: background-color 0.3s ease, opacity 0.3s ease;
+    text-transform: capitalize;
 }
 
 .button:hover {
@@ -320,12 +321,14 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .hero__content {
     width: 100%;
     max-width: 565px;
     padding-top: 60px;
+    padding-bottom: 54px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -442,7 +445,7 @@ img {
     text-align: center;
     width: 540px;
     margin-top: 0;
-    margin-bottom: 56px;
+    margin-bottom: 100px;
 }
 
 .statistics__cards {
@@ -593,8 +596,15 @@ img {
 .footer__lists {
     display: flex;
     align-items: flex-start;
-    gap: 92px;
     margin-right: 100px;
+}
+
+.footer_list:first-child {
+    margin-right: 78px;
+}
+
+.footer_list:nth-child(2) {
+    margin-right: 107px;
 }
 
 .footer_list {
@@ -604,11 +614,14 @@ img {
 }
 
 .footer__item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+}
+
+.footer__item:first-child {
+    margin-bottom: 22px;
 }
 
 .footer__item:first-child .footer__link {
-    margin-bottom: 22px;
     color: #fff;
     font-weight: 700;
     font-size: 16px;
@@ -622,6 +635,8 @@ img {
     line-height: normal;
     text-transform: capitalize;
     transition: color 0.3s ease;
+    display: inline-block;
+    letter-spacing: -0.25px;
 }
 
 .footer__socials {
@@ -717,6 +732,14 @@ img {
         margin-right: 0;
         gap: 40px;
     }
+
+    .footer_list:first-child {
+        margin-right: 0px;
+    }
+    
+    .footer_list:nth-child(2) {
+        margin-right: 0px;
+    }
     
     .footer__link {
         text-align: center;
@@ -749,6 +772,7 @@ img {
     
     .hero__content {
         padding-top: 490px;
+        padding-bottom: 8px;
         align-self: center;
         align-items: center;
     }
