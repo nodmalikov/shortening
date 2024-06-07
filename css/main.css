@@ -358,6 +358,7 @@ img {
     transform: translateY(50%);
     transition: box-shadow 0.3s ease;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .form:hover {
