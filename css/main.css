@@ -203,6 +203,12 @@ img {
     width: 24px;
     height: 21px;
     display: none;
+    color: var(--paragraph-color);
+    transition: color 0.3s ease;
+}
+
+.menu-btn:hover {
+    color: var(--menu-color);
 }
 
 /* MOBILE-MENU */
