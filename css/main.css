@@ -412,6 +412,11 @@ select:-webkit-autofill:focus {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+    transition: box-shadow 0.3s ease;
+}
+
+.statistics__form:hover {
+    box-shadow: 5px 5px 50px 0px rgba(43, 208, 208, 1);
 }
 
 .form-statistics__input {
