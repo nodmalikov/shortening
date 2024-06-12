@@ -390,8 +390,15 @@ select:-webkit-autofill:focus {
 
 
 /* STATISTICS */
+.statistics {
+    padding-bottom: 120px;
+    background-color: var(--bg-color);
+}
+
 .statistics__url {
-    transform: translateY(-202px);
+    top: -84px;
+    position: relative;
+    padding-bottom: 30px;
 }
 
 .statistics__form {
@@ -491,12 +498,6 @@ select:-webkit-autofill:focus {
     font-size: 15px;
     line-height: normal;
     color: #fff;
-}
-
-.statistics {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background-color: var(--bg-color);
 }
 
 .statistics__title {
@@ -788,6 +789,10 @@ select:-webkit-autofill:focus {
 /* 1000PX */
 @media only screen and (max-width: 1000px) {
     /* STATISTICS */
+    .statistics__url {
+        padding-bottom: 0px;
+    }
+
     .statistics__form {
         flex-direction: column;
         gap: 16px;
