@@ -1,6 +1,6 @@
 const elJsMenu = document.querySelector('.js-menu');
-const elJsBtnMenu = document.querySelector('.js-btn__menu');
+const elJsBtn = document.querySelector('.js-btn');
 
-elJsBtnMenu.addEventListener('click', function () {
-    elJsMenu.classList.toggle('mobile-menu__active');
+elJsBtn.addEventListener('click', function () {
+    elJsMenu.classList.toggle('mobile-header__active');
 });

@@ -19,7 +19,7 @@
                 <img class="header__img" src="img/header-logo.svg" alt="Shortly logo" width="120" height="32">
             </a>
             <!-- SITENAV -->
-            <nav class="sitenav">
+            <nav class="header__sitenav sitenav">
                 <ul class="sitenav__list">
                     <li class="sitenav__item">
                         <a class="sitenav__link" href="#">Features</a>
@@ -33,34 +33,34 @@
                 </ul>
             </nav>
             <!-- SIGNUP -->
-            <div class="signup">
+            <div class="header__signup signup">
                 <a href="#" class="signup__login">Login</a>
                 <a href="#" class="signup__signup button">Sign up</a>
             </div>
             <!-- MENU-BTN -->
-            <svg class="menu-btn js-btn__menu" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><path fill="currentColor" d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></svg>
+            <svg class="header__btn js-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><path fill="currentColor" d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></svg>
         </div>
         
         <!-- MOBILE-MENU -->
-        <div class="mobile-menu js-menu">
-            <!-- SITENAV-M -->
-            <nav class="sitenav-m">
-                <ul class="sitenav-m__list">
-                    <li class="sitenav-m__item">
-                        <a class="sitenav-m__link" href="#">Features</a>
+        <div class="header__mobile mobile-header js-menu">
+            <!-- SITENAV-MOBILE -->
+            <nav class="mobile-header__sitenav">
+                <ul class="mobile-header__list">
+                    <li class="mobile-header__item">
+                        <a class="mobile-header__link" href="#">Features</a>
                     </li>
-                    <li class="sitenav-m__item">
-                        <a class="sitenav-m__link" href="#">Pricing</a>
+                    <li class="mobile-header__item">
+                        <a class="mobile-header__link" href="#">Pricing</a>
                     </li>
-                    <li class="sitenav-m__item">
-                        <a class="sitenav-m__link" href="#">Resources</a>
+                    <li class="mobile-header__item">
+                        <a class="mobile-header__link" href="#">Resources</a>
                     </li>
                 </ul>
             </nav>
             <!-- SIGNUP-M -->
-            <div class="signup-m">
-                <a href="#" class="signup-m__login">Login</a>
-                <a href="#" class="signup-m__signup button">Sign up</a>
+            <div class="header__auth auth-header">
+                <a href="#" class="auth-header__login">Login</a>
+                <a href="#" class="auth-header__signup button">Sign up</a>
             </div>
         </div>
     </header>
@@ -75,14 +75,6 @@
                     <p class="hero__subtitle">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
                     <a href="#" class="hero__button button">Get started</a>
                 </div>
-                
-                <!-- FORM -->
-                <form class="form" action="https://echo.htmlacademy.ru">
-                    <div class="form__group">
-                        <input class="form__input" type="text" name="input" aria-label="Field for link" placeholder="Shorten a link here...">
-                        <button class="form__button button" type="submit">Shorten it!</button>
-                    </div>
-                </form>
             </div>
         </section>
         
@@ -93,28 +85,28 @@
                 <p class="statistics__subtitle">Track how your links are performing across the web with our advanced statistics dashboard.</p>
                 <div class="statistics__cards">
                     <!-- STATISTICS-CARD -->
-                    <div class="statistics__card">
-                        <div class="statistics-i__wrapper">
-                            <img class="statistics__img" src="img/brand-shape.svg" alt="" width="40" height="40">
+                    <div class="statistics__card card-statistics">
+                        <div class="card-statistics__wrapper">
+                            <img class="card-statistics__img" src="img/brand-shape.svg" alt="" width="40" height="40">
                         </div>
-                        <h3 class="statistics-c__title">Brand Recognition</h3>
-                        <p class="statistics-c__subtitle">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+                        <h3 class="card-statistics__title">Brand Recognition</h3>
+                        <p class="card-statistics__subtitle">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
                     </div>
                     <!-- STATISTICS-CARD -->
-                    <div class="statistics__card">
-                        <div class="statistics-i__wrapper">
-                            <img class="statistics__img" src="img/detailed-shape.svg" alt="" width="40" height="40">
+                    <div class="statistics__card card-statistics">
+                        <div class="card-statistics__wrapper">
+                            <img class="card-statistics__img" src="img/detailed-shape.svg" alt="" width="40" height="40">
                         </div>
-                        <h3 class="statistics-c__title">Detailed Records</h3>
-                        <p class="statistics-c__subtitle">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                        <h3 class="card-statistics__title">Detailed Records</h3>
+                        <p class="card-statistics__subtitle">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
                     </div>
                     <!-- STATISTICS-CARD -->
-                    <div class="statistics__card">
-                        <div class="statistics-i__wrapper">
-                            <img class="statistics__img" src="img/pen-shape.svg" alt="" width="48" height="48">
+                    <div class="statistics__card card-statistics">
+                        <div class="card-statistics__wrapper">
+                            <img class="card-statistics__img" src="img/pen-shape.svg" alt="" width="48" height="48">
                         </div>
-                        <h3 class="statistics-c__title">Fully Customizable</h3>
-                        <p class="statistics-c__subtitle">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                        <h3 class="card-statistics__title">Fully Customizable</h3>
+                        <p class="card-statistics__subtitle">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
                     </div>
                     <hr class="statistics__divider">
                 </div>
@@ -141,7 +133,7 @@
             <!-- LIST -->
             <div class="footer__lists">
                 <!-- FOOTER-LIST -->
-                <ul class="footer_list">
+                <ul class="footer__list">
                     <li class="footer__item">
                         <a class="footer__link" href="#">Features</a>
                     </li>
@@ -157,7 +149,7 @@
                 </ul>
                 
                 <!-- FOOTER-LIST -->
-                <ul class="footer_list">
+                <ul class="footer__list">
                     <li class="footer__item">
                         <a class="footer__link" href="#">Resources</a>
                     </li>
@@ -173,7 +165,7 @@
                 </ul>
                 
                 <!-- FOOTER-LIST -->
-                <ul class="footer_list">
+                <ul class="footer__list">
                     <li class="footer__item">
                         <a class="footer__link" href="#">Company</a>
                     </li>

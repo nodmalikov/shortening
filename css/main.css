@@ -27,6 +27,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/Poppins-MediumItalic.woff2") format("woff2"),
+        url("../font/Poppins-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
 /* GLOBAL */
 html {
     height: 100%;
@@ -101,7 +110,7 @@ img {
 }
 
 /* MAIN */
-.main-content {
+.main {
     flex-grow: 1;
 }
 
@@ -159,7 +168,7 @@ img {
 }
 
 .sitenav__link:hover,
-.sitenav-m__link:hover {
+.mobile-header__link:hover {
     opacity: 0.8;
 }
 
@@ -200,7 +209,7 @@ img {
 }
 
 /* MENU-BTN */
-.menu-btn {
+.header__btn {
     width: 24px;
     height: 21px;
     display: none;
@@ -208,12 +217,12 @@ img {
     transition: color 0.3s ease;
 }
 
-.menu-btn:hover {
+.header-btn:hover {
     color: var(--menu-color);
 }
 
 /* MOBILE-MENU */
-.mobile-menu {
+.header__mobile {
     width: 80vw;
     max-width: 327px;
     position: absolute;
@@ -231,18 +240,18 @@ img {
     z-index: 999;
 }
 
-.mobile-menu__active {
+.mobile-header__active {
     transform: translateX(0%);
     top: 96px;
     right: 10%;
 }
 
-/* SITENAV-M */
-.sitenav-m {
+/* SITENAV-MOBILE */
+.mobile-header__sitenav {
     width: 100%;
 }
 
-.sitenav-m__list {
+.mobile-header__list {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -255,7 +264,7 @@ img {
     border-bottom: 1px solid var(--paragraph-color);
 }
 
-.sitenav-m__link {
+.mobile-header__link {
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
@@ -266,40 +275,40 @@ img {
     transition: color 0.3s ease;
 }
 
-.sitenav-m__link:active {
+.mobile-header__link:active {
     color: var(--striking-color);
 }
 
-.signup-m {
+.header__auth {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.signup-m__login,
-.signup-m__signup {
+.auth-header__login,
+.auth-header__signup {
     margin-bottom: 24px;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
 }
 
-.signup-m__login {
+.auth-header__login {
     line-height: normal;
     color: #fff;
     transition: opacity 0.3s ease, color 0.3s ease;
 }
 
-.signup-m__login:hover {
+.auth-header__login:hover {
     opacity: 0.8;
 }
 
-.signup-m__login:active {
+.auth-header__login:active {
     color: var(--paragraph-color);
 }
 
-.signup-m__signup {
+.auth-header__signup {
     width: 100%;
     text-align: center;
 }
@@ -313,8 +322,7 @@ img {
     padding-top: 30px;
     background-image: url("../img/hero-bg.svg");
     background-repeat: no-repeat;
-    background-size: 733px 482px;
-    background-position: top 0px left calc(50% + 490px);
+    background-position: top 25px left calc(50% + 474px);
 }
 
 .hero__container {
@@ -362,63 +370,10 @@ img {
     line-height: normal;
 }
 
-.form {
-    width: 100%;
-    transform: translateY(50%);
-    transition: box-shadow 0.3s ease;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.form:hover {
-    box-shadow: 5px 5px 50px 0px rgba(43,208,208,1);
-}
-
-.form__group {
-    display: flex;
-    align-items: stretch;
-    gap: 24px;
-    height: 168px;
-    width: 100%;
-    background-image: url("../img/input-bg.svg");
-    padding: 52px 64px;
-    position: relative;
-    z-index: 888;
-}
-
-.form__input {
-    width: 780px;
-    padding: 14px 32px;
-    border-radius: 10px;
-    border: 0px;
-    font-size: 20px;
-    color: var(--striking-color);
-}
-
-.form__input:focus {
-    outline: 1px solid var(--heading-color);
-}
-
-.form__input::placeholder {
-    color: rgba(52, 49, 61, 0.5);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 36px;
-}
-
-.form__button {
-    padding: 17px 40px;
-    border: 0;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: normal;
-}
-
 
 /* STATISTICS */
 .statistics {
-    padding-top: 204px;
+    padding-top: 120px;
     padding-bottom: 120px;
     background-color: var(--bg-color);
 }
@@ -479,7 +434,7 @@ img {
     margin-top: 88px;
 } 
 
-.statistics-i__wrapper {
+.card-statistics__wrapper {
     position: absolute;
     width: 88px;
     height: 88px;
@@ -492,17 +447,17 @@ img {
     transform: translateY(-50%);
 }
 
-.statistics__img {
+.card-statistics__img {
     width: 40px;
     height: 40px;
 }
 
-.statistics__card:nth-child(3) .statistics__img {
+.statistics__card:nth-child(3) .card-statistics__img {
     width: 47px;
     height: 48px;
 }
 
-.statistics-c__title {
+.card-statistics__title {
     font-weight: 700;
     font-size: 22px;
     line-height: normal;
@@ -511,7 +466,7 @@ img {
     margin-bottom: 12px;
 }
 
-.statistics-c__subtitle {
+.card-statistics__subtitle {
     margin: 0;
     color: var(--paragraph-color);
 }
@@ -599,15 +554,15 @@ img {
     margin-right: 100px;
 }
 
-.footer_list:first-child {
+.footer__list:first-child {
     margin-right: 78px;
 }
 
-.footer_list:nth-child(2) {
+.footer__list:nth-child(2) {
     margin-right: 107px;
 }
 
-.footer_list {
+.footer__list {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -678,8 +633,8 @@ img {
         height: 100%;
     }
     
-    .statistics-c__title,
-    .statistics-c__subtitle {
+    .card-statistics__title,
+    .card-statistics__subtitle {
         text-align: center;
     }
     
@@ -687,7 +642,7 @@ img {
         margin-bottom: 92px;
     }
     
-    .statistics-i__wrapper {
+    .card-statistics__wrapper {
         left: 50%;
         transform: translateX(-50%);
         top: -44px;
@@ -733,11 +688,11 @@ img {
         gap: 40px;
     }
 
-    .footer_list:first-child {
+    .footer__list:first-child {
         margin-right: 0px;
     }
     
-    .footer_list:nth-child(2) {
+    .footer__list:nth-child(2) {
         margin-right: 0px;
     }
     
@@ -760,7 +715,7 @@ img {
         justify-content: space-between;
     }
     
-    .menu-btn {
+    .header__btn {
         display: block;
     }
     
@@ -786,21 +741,6 @@ img {
     
     .hero__subtitle {
         text-align: center;
-    }
-    
-    .form__group {
-        flex-direction: column;
-        justify-content: center;
-        gap: 16px;
-        height: 160px;
-        padding: 24px;
-    }
-    
-    .form__input,
-    .form__button {
-        width: 100%;
-        padding: 10px;
-        line-height: normal;
     }
     
     /* STATISTICS */
@@ -977,7 +917,7 @@ img {
         padding: 60px 20px 25px;
     }
     
-    .statistics-c__title {
+    .card-statistics__title {
         font-size: 20px;
     }
     
