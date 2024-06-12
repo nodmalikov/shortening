@@ -950,10 +950,6 @@ select:-webkit-autofill:focus {
     }
     
     /* STATISTICS */
-    .statistics {
-        padding-top: 160px;
-    }
-    
     .statistics__title,
     .started__title {
         font-size: 36px;
