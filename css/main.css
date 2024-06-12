@@ -320,6 +320,7 @@ img {
     align-items: center;
     flex-direction: column;
     padding-top: 30px;
+    padding-bottom: 152px;
     background-image: url("../img/hero-bg.svg");
     background-repeat: no-repeat;
     background-position: top 25px left calc(50% + 474px);
