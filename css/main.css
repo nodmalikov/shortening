@@ -444,7 +444,7 @@ select:-webkit-autofill:focus {
     line-height: normal;
 }
 
-.form-statistics__error {
+.form-statistics__input:not(:focus):not(:placeholder-shown):invalid ~ .form-statistics__error {
     position: absolute;
     font-weight: 500;
     font-size: 16px;
@@ -454,6 +454,10 @@ select:-webkit-autofill:focus {
     color: #f46363;
     top: 127px;
     left: 64px;
+    display: block;
+}
+
+.form-statistics__error {
     display: none;
 }
 
@@ -822,7 +826,7 @@ select:-webkit-autofill:focus {
         font-size: 18px;
     }
     
-    .form-statistics__error {
+    .form-statistics__input:not(:focus):not(:placeholder-shown):invalid ~ .form-statistics__error {
         display: none;
     }
     
