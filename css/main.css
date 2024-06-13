@@ -254,7 +254,6 @@ select:-webkit-autofill:focus {
     align-items: center;
     transform: translateX(100%);
     z-index: 999;
-    display: none;
 }
 
 .mobile-header__active {
@@ -337,7 +336,7 @@ select:-webkit-autofill:focus {
     align-items: center;
     flex-direction: column;
     padding-top: 30px;
-    padding-bottom: 152px;
+    padding-bottom: 170px;
     background-image: url("../img/hero-bg.svg");
     background-repeat: no-repeat;
     background-position: top 25px left calc(50% + 474px);
