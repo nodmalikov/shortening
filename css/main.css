@@ -194,8 +194,7 @@ select:-webkit-autofill:focus {
 }
 
 .sitenav__link:active {
-    align-items: center;
-    gap: 38px;
+    color: var(--heading-color);
 }
 
 .signup__login,
