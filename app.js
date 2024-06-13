@@ -3,10 +3,17 @@ const elJsBtn = document.querySelector('.js-btn');
 const elJsForm = document.querySelector('.js-form');
 const elResult = document.querySelector('.statistics__result');
 const elJsStatistics = document.querySelector('.js-statistics');
+const elJsClose = document.querySelector('.js-close');
 
 if (elJsBtn) {
     elJsBtn.addEventListener('click', function () {
         elJsMenu.classList.toggle('mobile-header__active');
+    });
+}
+
+if (elJsClose) {
+    elJsClose.addEventListener('click', function () {
+        elJsMenu.classList.remove('mobile-header__active');
     });
 }
 
