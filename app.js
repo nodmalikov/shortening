@@ -27,6 +27,9 @@ if (elJsStatistics) {
             // CHANGE-BUTTON-BGCOLOR
             evt.target.classList.add('result-btn-active');
 
+            // COPY-LINK-CLIPBOARD
+            navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);
+
             // SETTIMEOUT
             setTimeout(function () {
                 evt.target.textContent = 'Copy';
