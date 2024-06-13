@@ -262,13 +262,13 @@ select:-webkit-autofill:focus {
     position: absolute;
     top: 20px;
     right: 20px;
+    background-color: transparent;
 }
 
 .mobile-header__close {
     width: 25px;
     height: 25px;
     color: #fff;
-    background-color: var(--heading-color);
     display: block;
 }
 
