@@ -8,7 +8,7 @@
     --font-family: "Poppins";
 }
 
-/* FONTChange Autocomplete styles in Chrome */
+/* FONT */
 @font-face {
     font-family: "Poppins";
     src: url("../font/Poppins-Bold.woff2") format("woff2"),
