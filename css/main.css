@@ -36,6 +36,32 @@
     font-display: swap;
 }
 
+/* LOADER */
+#loader {
+    border: 12px solid var(--heading-color);
+    border-top: 12px solid var(--striking-color);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+.center {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1000;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* GLOBAL */
 html {
     height: 100%;
