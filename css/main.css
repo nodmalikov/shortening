@@ -419,6 +419,10 @@ select:-webkit-autofill:focus {
     margin-bottom: 5px;
 }
 
+.hero__badge {
+	color: var(--striking-color);
+}
+
 .hero__subtitle {
     font-weight: 500;
     font-size: 22px;
