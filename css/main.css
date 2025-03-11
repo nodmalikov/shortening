@@ -62,6 +62,19 @@
     }
 }
 
+// SCROLL-ANIMATION
+.reveal {
+	position: relative;
+	transform: translateY(50px);
+	opacity: 0;
+	transition: all 1.3s ease;
+}
+
+.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+
 /* GLOBAL */
 html {
     height: 100%;
