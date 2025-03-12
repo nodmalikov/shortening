@@ -70,9 +70,6 @@ updateMainContentMargin();
 // OPTIONAL: UPDATE MAIN CONTENT'S MARGIN IF THE HEADER'S HEIGHT CHANGES DYNAMICALLY
 new ResizeObserver(updateMainContentMargin).observe(elHeader);
 
-// AOS
- AOS.init();
-
 // LOADER
 document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
